@@ -1,19 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping Website</title>
     <style>
-        body{
-            background-color: blue;
+
+        body {
+            background-color: #f5f6fa;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+        h1 {
+            color: #1e90ff;
+            text-align: center;
+            font-size: 50px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            margin: 80px 0 20px 0;
+        }
+
+        .welcome-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffffff;
+            width: 320px;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            text-align: center;
+        }
+
+
+        .welcome-message {
+            font-size: 1.2em;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .shop-button {
+            background-color: #1e90ff;
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 1em;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .shop-button:hover {
+            background-color: #187bcd;
         }
     </style>
 </head>
+
 <body>
-    <h1 style="color: white; text-align: center; font-size: 50px; font-family: 'Times New Roman', Times, serif; font-weight: bold; margin-top: 100px; margin-bottom: 100px; ">Enjoy Shopping</h1>
-    <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
-        <div style="background-color: white; width: 300px; height: 300px; border-radius: 10px; box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);"> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p></div>
+
+    <h1>Enjoy Shopping</h1>
+
+    <div class="welcome-card">
+        <p class="welcome-message">Welcome to our store! Discover amazing deals and exclusive products just for you.</p>
+        <button class="shop-button">Start Shopping</button>
     </div>
+
 </body>
+
 </html>
